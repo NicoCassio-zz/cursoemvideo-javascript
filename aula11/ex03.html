@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 11</title>
+    </head>
+    <style>
+        body {
+            background-color: lightblue;
+            color: black;
+            font: normal 20pt Arial;
+        }
+        input {
+            box-shadow: 1px 1px 1px #606060;
+        }
+    </style>
+    <body>
+        <h1>Condições</h1>
+        <p><label for="cV">Velocidade: (Km/h) </label><input type="number" name="tV" id="cV" size="7" /></p>
+        <input type="submit" value="Verificar" onclick=velocidade() />
+        <p id="resposta"></p>
+        <p><script>
+            function velocidade() {
+                var v = Number(window.document.querySelector('input#cV').value)
+                var r = window.document.querySelector('p#resposta')
+                if(v > 60) {
+                    r.innerText = 'Multado'
+                } else {
+                    r.innerText = 'Safe'
+                }
+            }
+        </script></p>
+    </body>
+</html>

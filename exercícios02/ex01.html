@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 14</title>
+        <link rel="stylesheet" type="text/css" href="../estilo.css" />
+    </head>
+    <style>
+        input {
+            box-shadow: 1px 1px 1px #606060;
+        }
+        input#botao {
+            margin-top: 5px;
+        }
+        fieldset#sexo {
+            width: 200px;
+        }
+    </style>
+    <body>
+        <header id="cabecalho">
+            <h1>Verificador de Idade</h1>
+        </header>
+        <section id="corpo">
+            <p><label for="cNasc">Ano de Nascimento: </label><input type="number" name="tNasc" id="cNasc" min="1900" max="2020" size="4" /></p>
+            <fieldset id="sexo"><legend>Sexo:</legend>
+                <p><input type="radio" name="tSexo" id="cMasc" value="m" checked /><label for="cMasc"> Masculino</label></p>
+                <p><input type="radio" name="tSexo" id="cFem" value="f" checked /><label for="cFem"> Feminino</label></p>
+            </fieldset>
+            <input type="submit" id="botao" value="Verificar" onclick="verificar()" />
+            <p id="resposta"></p>
+        </section>
+        <footer id="rodape">
+            <h1>Curso de Javasript</h1>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

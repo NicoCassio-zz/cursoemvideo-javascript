@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+body {
+    background-color: #808080;
+    font-family: Arial, sans-serif;
+}
+
+header#cabecalho h1 {
+    font-size: 30pt;
+    text-align: center;
+    color: rgba(255, 255, 255, .8);
+    text-shadow: 1px 1px 1px #606060;
+}
+
+section#corpo {
+    background-color: #fff;
+    width: 600px;
+    height: 450px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #606060;
+    border-radius: 25px;
+}
+
+section#corpo input select {
+    box-shadow: 1px 1px 1px #606060;
+}
+
+footer#rodape h1 {
+    font-size: 15pt;
+    text-align: center;
+    color: rgba(0, 0, 0, .8);
+    text-shadow: 1px 1px 1px #606060;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 09</title>
+    </head>
+    <style>
+        body {
+            background-color: lightblue;
+            color: black;
+            font: normal 20pt Arial;
+        }
+    </style>
+    <body>
+        <h1>DOM</h1>
+        <p>Resultado: </p>
+        <p>Segundo parágrafo do <strong>DOM</strong></p>
+        <div id="msg">CLIQUE</div>
+        <p><script>
+            document.getElementsByTagName('p')[1].style.color = 'yellow'
+            document.querySelector('div#msg').style.color = 'white'
+        </script></p>
+    </body>
+</html>

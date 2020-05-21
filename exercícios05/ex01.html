@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 05</title>
+        <link rel="stylesheet" type="text/css" href="../estilo.css" />
+    </head>
+    <body>
+        <header id="cabecalho">
+            <h1>Analisador de Números</h1>
+        </header>
+        <section id="corpo">
+            <p><label for="cNum">Número: </label><input type="number" name="tNum" id="cNum" />
+            <input type="submit" value="Cadastrar" onclick="cadastrar()" /></p>
+            <select name="tVet" id="cVet" size="10">
+                <option>Digite um número acima</option>
+            </select><br />
+            <input type="submit" value="Finalizar" onclick="analisar()" />
+            <div id="resposta"></div>
+        </section>
+        <footer id="rodape">
+            <h1>Curso de Javasript</h1>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
